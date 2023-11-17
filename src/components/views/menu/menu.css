@@ -1,0 +1,112 @@
+.menu-section {
+    background-color: transparent;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu-section .container h2{
+    margin-bottom: 50px;
+    letter-spacing: 5px; 
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.container .container-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    padding: 0 auto;
+}
+
+.menu-item {
+    width: calc(33% - 20px);
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: #ffffff3e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+}
+
+.menu-item .container-img {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.menu-item .container-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.menu-item .price {
+    font-size: 27px;
+    font-weight: bold;
+    color: #067700;
+    text-decoration: underline;
+    margin-left: auto;
+    margin-top: 20px;
+    text-shadow: 2px 0px 7px rgba(0, 0, 0, 0.144);
+}
+
+@media (max-width: 800px){
+
+    .container .container-items{
+        justify-content: space-around;
+    }
+
+    .menu-item {
+        width: calc(33% - 20px);
+        min-width: 300px;
+        padding: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+}
+
+@media (max-width: 600px){
+
+    .menu-item {
+        width: calc(100% - 40px);
+        min-width: none;
+        padding: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+}

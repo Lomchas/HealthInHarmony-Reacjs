@@ -1,0 +1,166 @@
+nav {
+  background-color: #112710;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+nav .container {
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+nav .container .logo {
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+nav .container .logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+nav .container .logo span {
+  position: absolute;
+  top: 90%;
+  letter-spacing: 3px;
+  text-decoration: overline;
+  font-size: 12px;
+  text-align: center;
+  width: 200px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  z-index: 10000;
+  font-size: 48px;
+  font-weight: bold;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.menu-icon:hover {
+  background-color: #0000002b;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu .active {
+  opacity: 1;
+  border-bottom: 2px solid rgb(0, 176, 18);
+}
+
+.menu a:hover {
+  opacity: 1;
+  border-bottom: 2px solid rgb(0, 176, 18);
+}
+
+@media (max-width: 800px) {
+  nav {
+    height: 150px;
+  }
+
+  nav .container {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav .container .logo img {
+    max-width: 150px;
+    width: 70%;
+    min-width: 100px;
+    height: auto;
+  }
+
+  nav .container .logo span {
+    position: absolute;
+    top: 90%;
+    letter-spacing: 3px;
+    text-decoration: overline;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex !important;
+  }
+
+  .menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    background-color: #112710;
+    z-index: 1000;
+    width: 60vw;
+    height: 100vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 80px;
+    transition: all 0.8s ease-in-out;
+  }
+
+  #menu-toggle:checked ~ .menu {
+    right: 0;
+  }
+
+  .menu li {
+    text-align: right;
+    padding: 0 20px 0 0;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 0;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu a:hover {
+    border-bottom: 2px solid rgb(0, 176, 18);
+  }
+}
