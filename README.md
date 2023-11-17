@@ -37,10 +37,14 @@ Descubre nuestra colección de recetas saludables, diseñadas para satisfacer tu
 
 ¡Gracias por ser parte de la comunidad Health in Harmony! Juntos, construyamos un camino hacia una vida más saludable y armoniosa. 🌟
 
+## -------------------------------------------------------///---------------------------------------------------------------------- ##
 
 
 
-# Getting Started with Create React App
+# If you're a developer, take at look this ⬇️
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
